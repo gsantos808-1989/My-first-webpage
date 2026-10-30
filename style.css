@@ -1,6 +1,6 @@
 /* Page Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     background-color: #f4f4f4;
     color: #333;
@@ -64,4 +64,19 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+@media (max-width: 768px) {
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
 }

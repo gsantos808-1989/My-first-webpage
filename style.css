@@ -1,93 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-
-/* Reset */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+/* Type Selector */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111111;
+    color: white;
+    margin: 0;
 }
 
-/* Body */
-body{
-    font-family:'Roboto', sans-serif;
-    background-color:#111;
-    color:white;
-    line-height:1.6;
-}
-
-/* Header */
-header{
-    background-color:#cc0000;
-    text-align:center;
-    padding:20px;
-}
-
-header h1{
-    margin-bottom:10px;
+/* ID Selector */
+#main-header {
+    background-color: #cc0000;
+    padding: 20px;
+    margin: 10px;
+    border: 3px solid white;
+    text-align: center;
 }
 
 /* Navigation */
-nav ul{
-    list-style:none;
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
+nav li {
+    display: inline;
+    margin: 0 15px;
 }
 
-nav a:hover{
-    color:#ffd700;
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* Main Content */
-main{
-    max-width:1000px;
-    margin:auto;
-    padding:20px;
+nav a:hover {
+    color: gold;
 }
 
-/* Sections */
-section{
-    background-color:#222;
-    padding:20px;
-    margin-bottom:20px;
-    border-radius:10px;
+/* Class Selector */
+.content-box {
+    background-color: #222222;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #cc0000;
+    border-radius: 10px;
 }
 
-/* Headings */
-h2{
-    color:#ff4d4d;
-    margin-bottom:10px;
+/* Class Selector */
+.highlight {
+    color: #ff6666;
+    font-weight: bold;
 }
 
-/* Paragraphs */
-p{
-    margin-bottom:10px;
+/* Image Styling */
+img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+    padding: 5px;
+    border: 3px solid #cc0000;
 }
 
-/* Images */
-img{
-    width:100%;
-    max-width:800px;
-    height:auto;
-    display:block;
-    margin:20px auto;
-    border-radius:10px;
-    border:3px solid #cc0000;
+/* Type Selector */
+h2 {
+    color: #ff6666;
 }
 
 /* Footer */
-footer{
-    background-color:#cc0000;
-    text-align:center;
-    padding:15px;
-    margin-top:20px;
+footer {
+    background-color: #cc0000;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
 }
 
-/* Responsive
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    img {
+        width: 100%;
+    }
+}

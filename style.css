@@ -1,82 +1,93 @@
-/* Page Styling */
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    background-color: #f4f4f4;
-    color: #333;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+body{
+    font-family:'Roboto', sans-serif;
+    background-color:#111;
+    color:white;
+    line-height:1.6;
 }
 
 /* Header */
-header {
-    background-color: #004080;
-    color: white;
-    text-align: center;
-    padding: 20px;
+header{
+    background-color:#cc0000;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    margin-bottom:10px;
 }
 
 /* Navigation */
-nav ul {
-    list-style: none;
-    padding: 0;
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
 }
 
-nav li {
-    display: inline;
-    margin: 0 15px;
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
+nav a:hover{
+    color:#ffd700;
 }
 
 /* Main Content */
-main {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
+main{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
 }
 
 /* Sections */
-section {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
+section{
+    background-color:#222;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
 }
 
-/* Image */
-img {
-    display: block;
-    margin: 15px auto;
-    border-radius: 10px;
-    max-width: 100%;
+/* Headings */
+h2{
+    color:#ff4d4d;
+    margin-bottom:10px;
+}
+
+/* Paragraphs */
+p{
+    margin-bottom:10px;
+}
+
+/* Images */
+img{
+    width:100%;
+    max-width:800px;
+    height:auto;
+    display:block;
+    margin:20px auto;
+    border-radius:10px;
+    border:3px solid #cc0000;
 }
 
 /* Footer */
-footer {
-    background-color: #004080;
-    color: white;
-    text-align: center;
-    padding: 10px;
+footer{
+    background-color:#cc0000;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
 }
 
-@media (max-width: 768px) {
-    nav li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    main {
-        padding: 10px;
-    }
-
-    section {
-        padding: 15px;
-    }
-}
+/* Responsive

@@ -67,6 +67,11 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .highlight {
     font-weight: bold;
 }
@@ -81,7 +86,7 @@ footer {
 /* Tablet View */
 @media (max-width: 768px) {
     .grid-layout {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 

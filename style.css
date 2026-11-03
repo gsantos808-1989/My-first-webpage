@@ -1,29 +1,33 @@
-/* Type Selector */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #111111;
-    color: white;
+/* Reset */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* ID Selector */
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Header */
 #main-header {
-    background-color: #cc0000;
+    background-color: #b30000;
     padding: 20px;
-    margin: 10px;
-    border: 3px solid white;
     text-align: center;
 }
 
-/* Navigation */
+/* Navigation - Flexbox */
 nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     list-style: none;
-    padding: 0;
-}
-
-nav li {
-    display: inline;
-    margin: 0 15px;
+    margin-top: 10px;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -36,53 +40,60 @@ nav a:hover {
     color: gold;
 }
 
-/* Class Selector */
-.content-box {
-    background-color: #222222;
+/* Main Layout - Grid */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     padding: 20px;
-    margin: 20px;
-    border: 2px solid #cc0000;
+}
+
+/* Content Boxes */
+.content-box {
+    background-color: #222;
     border-radius: 10px;
+    padding: 20px;
 }
 
-/* Class Selector */
-.highlight {
-    color: #ff6666;
-    font-weight: bold;
+.content-box h2 {
+    margin-bottom: 10px;
+    color: #ff4d4d;
 }
 
-/* Image Styling */
-img {
+.content-box img {
     width: 100%;
-    max-width: 600px;
-    display: block;
-    margin: 20px auto;
-    padding: 5px;
-    border: 3px solid #cc0000;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
-/* Type Selector */
-h2 {
-    color: #ff6666;
+.highlight {
+    font-weight: bold;
 }
 
 /* Footer */
 footer {
-    background-color: #cc0000;
     text-align: center;
     padding: 15px;
-    margin-top: 20px;
+    background-color: #b30000;
 }
 
-/* Responsive Design */
+/* Tablet View */
 @media (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
-    nav li {
-        display: block;
-        margin: 10px 0;
+/* Mobile View */
+@media (max-width: 320px) {
+
+    .grid-layout {
+        grid-template-columns: 1fr;
     }
 
-    img {
-        width: 100%;
+    nav ul {
+        flex-direction: column;
+        align-items: center;
     }
 }

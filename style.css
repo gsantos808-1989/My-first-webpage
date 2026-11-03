@@ -53,6 +53,7 @@ nav a:hover {
     background-color: #222;
     border-radius: 10px;
     padding: 20px;
+    width: 100%;
 }
 
 .content-box h2 {
@@ -91,7 +92,7 @@ footer {
 }
 
 /* Mobile View */
-@media (max-width: 320px) {
+@media (max-width: 480px) {
 
     .grid-layout {
         grid-template-columns: 1fr;

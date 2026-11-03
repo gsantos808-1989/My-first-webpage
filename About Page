@@ -1,0 +1,18 @@
+<main>
+    <h1>About Me</h1>
+
+    <section class="about-grid">
+        <div class="card">
+            <h2>About</h2>
+            <p>
+                I am a student and a Merchandising Service Team
+                associate at Lowe's.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Contact</h2>
+            <p>Email: youremail@email.com</p>
+        </div>
+    </section>
+</main>
